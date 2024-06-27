@@ -1,7 +1,56 @@
+#slide1 {
+  background-image: url('img/img1.jpg');
+}
+
+#slide2 {
+  background-image: url('img/img2.jpg');
+}
+
+#slide3 {
+  background-image: url('img/img3.jpg');
+}
+
+#slide4 {
+  background-image: url('img/img4.jpg');
+}
+
+#slide5 {
+  background-image: url('img/img5.jpg');
+}
+
+
+body {
+  background-color: black;
+}
+
 .carousel {
-    margin: 10vh 25vh;
-  }
-  
-  body {
-    background-color: black;
-  }
+  position: relative;
+  margin: 10vh auto;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 75vw;
+}
+
+.slide-image {
+  width: 25vw;
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+}
+
+.arrow {
+  width: 5%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#right {
+  right: 20px;
+}
+
+#left {
+  left: 20px;
+}
